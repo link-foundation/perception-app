@@ -55,6 +55,14 @@ import * as semver from 'semver';
 import { requires as piRequires } from '@deep-foundation/perception-imports/imports/requires';
 import dynamic from 'next/dynamic';
 
+import * as helia from 'helia';
+import * as unixfs from '@helia/unixfs';
+import * as cid from 'multiformats/cid';
+import * as stargate from '@cosmjs/stargate';
+import * as vercel from '@vercel/sdk';
+import * as openrouter from '@openrouter/ai-sdk-provider';
+import * as ai from 'ai';
+
 // @ts-ignore
 const GraphQL = dynamic(() => import('./graphql').then(m => m.GraphQL), { ssr: false })
 const EmojiPicker = dynamic(() => import('emoji-picker-react'), { ssr: false })
@@ -135,5 +143,13 @@ export const requires: any = {
   'emoji-picker-react': EmojiPicker,
 
   'semver': semver,
+
+  'helia': helia,
+  '@helia/unixfs': unixfs,
+  'multiformats/cid': cid,
+  '@cosmjs/stargate': stargate,
+  '@vercel/sdk': vercel,
+  '@openrouter/ai-sdk-provider': openrouter,
+  'ai': ai,
 };
 
