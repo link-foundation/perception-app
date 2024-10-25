@@ -55,13 +55,13 @@ import * as semver from 'semver';
 import { requires as piRequires } from '@deep-foundation/perception-imports/imports/requires';
 import dynamic from 'next/dynamic';
 
-import * as helia from 'helia';
-import * as unixfs from '@helia/unixfs';
-import * as cid from 'multiformats/cid';
-import * as stargate from '@cosmjs/stargate';
-import * as vercel from '@vercel/sdk';
-import * as openrouter from '@openrouter/ai-sdk-provider';
-import * as ai from 'ai';
+// import * as helia from 'helia';
+// import * as unixfs from '@helia/unixfs';
+// import * as cid from 'multiformats/cid';
+// import * as stargate from '@cosmjs/stargate';
+// import * as vercel from '@vercel/sdk';
+// import * as openrouter from '@openrouter/ai-sdk-provider';
+// import * as ai from 'ai';
 
 // @ts-ignore
 const GraphQL = dynamic(() => import('./graphql').then(m => m.GraphQL), { ssr: false })
@@ -144,12 +144,12 @@ export const requires: any = {
 
   'semver': semver,
 
-  'helia': helia,
-  '@helia/unixfs': unixfs,
-  'multiformats/cid': cid,
-  '@cosmjs/stargate': stargate,
-  '@vercel/sdk': vercel,
-  '@openrouter/ai-sdk-provider': openrouter,
-  'ai': ai,
+  'helia': import('helia'),
+  '@helia/unixfs': import('@helia/unixfs'),
+  'multiformats/cid': import('multiformats/cid'),
+  '@cosmjs/stargate': import('@cosmjs/stargate'),
+  '@vercel/sdk': import('@vercel/sdk'),
+  '@openrouter/ai-sdk-provider': import('@openrouter/ai-sdk-provider'),
+  'ai': import('ai'),
 };
 
