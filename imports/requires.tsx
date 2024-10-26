@@ -57,6 +57,8 @@ import dynamic from 'next/dynamic';
 
 import * as ws from 'ws';
 
+import * as cosmwasmStargate from '@cosmjs/cosmwasm-stargate';
+
 // import * as helia from 'helia';
 // import * as unixfs from '@helia/unixfs';
 // import * as cid from 'multiformats/cid';
@@ -155,5 +157,6 @@ export const requires: any = {
   '@vercel/sdk': import('@vercel/sdk'),
   '@openrouter/ai-sdk-provider': import('@openrouter/ai-sdk-provider'),
   'ai': import('ai'),
+  '@cosmjs/cosmwasm-stargate': cosmwasmStargate,
 };
 
