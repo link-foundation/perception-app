@@ -1,6 +1,6 @@
 {
   "name": "@deep-foundation/perception-app",
-  "version": "0.0.108",
+  "version": "0.0.109",
   "description": "",
   "license": "Unlicense",
   "main": "./bin/server.js",
@@ -42,7 +42,7 @@
     "@chakra-ui/theme-tools": "^2.1.2",
     "@cosmjs/cosmwasm-stargate": "^0.32.4",
     "@cosmjs/stargate": "^0.32.4",
-    "@deep-foundation/perception-imports": "^0.0.139",
+    "@deep-foundation/perception-imports": "^0.0.140",
     "@deep-foundation/store": "^0.0.32",
     "@helia/unixfs": "^4.0.0",
     "@next/bundle-analyzer": "^14.2.13",
