@@ -55,6 +55,8 @@ import * as semver from 'semver';
 import { requires as piRequires } from '@deep-foundation/perception-imports/imports/requires';
 import dynamic from 'next/dynamic';
 
+import * as ws from 'ws';
+
 // import * as helia from 'helia';
 // import * as unixfs from '@helia/unixfs';
 // import * as cid from 'multiformats/cid';
@@ -143,6 +145,8 @@ export const requires: any = {
   'emoji-picker-react': EmojiPicker,
 
   'semver': semver,
+
+  'ws': ws,
 
   'helia': import('helia'),
   '@helia/unixfs': import('@helia/unixfs'),

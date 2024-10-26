@@ -1,6 +1,6 @@
 {
   "name": "@deep-foundation/perception-app",
-  "version": "0.0.104",
+  "version": "0.0.105",
   "description": "",
   "license": "Unlicense",
   "main": "./bin/server.js",
@@ -88,7 +88,8 @@
     "slate-history": "^0.109.0",
     "typescript": "^5.4.5",
     "use-async-memo": "^1.2.5",
-    "webpack-stats-plugin": "^1.1.3"
+    "webpack-stats-plugin": "^1.1.3",
+    "ws": "^8.18.0"
   },
   "devDependencies": {
     "@capacitor-community/electron": "^5.0.1",
