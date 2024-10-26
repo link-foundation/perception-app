@@ -1,6 +1,6 @@
 {
   "name": "@deep-foundation/perception-app",
-  "version": "0.0.105",
+  "version": "0.0.106",
   "description": "",
   "license": "Unlicense",
   "main": "./bin/server.js",
@@ -40,6 +40,7 @@
   ],
   "dependencies": {
     "@chakra-ui/theme-tools": "^2.1.2",
+    "@cosmjs/cosmwasm-stargate": "^0.32.4",
     "@cosmjs/stargate": "^0.32.4",
     "@deep-foundation/perception-imports": "^0.0.139",
     "@deep-foundation/store": "^0.0.32",
